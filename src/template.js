@@ -1,9 +1,7 @@
-import {useState} from 'react'
 import Addtocart from './addtocartbutton.js'
 import BasicRating from './mui-rating.js'
 export default function Template(){
 
-    const [carttotal, setCarttotal] = useState(0)
     
 
 
@@ -33,7 +31,7 @@ export default function Template(){
                         <button className="btn btn-outline-dark" type="submit">
                             <i className="bi-cart-fill me-1"></i>
                             Cart
-                            <span className="badge bg-dark text-white ms-1 rounded-pill" id="" onClick={setCarttotal(carttotal + 1)}>{carttotal}</span>
+                            <span className="badge bg-dark text-white ms-1 rounded-pill" id="" >0</span>
                         </button>
                     </form>
                 </div>
